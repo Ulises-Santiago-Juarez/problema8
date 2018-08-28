@@ -1,0 +1,47 @@
+#include <iostream>
+
+
+
+using namespace std;
+
+int main()
+
+
+{
+
+    int valor,num1, num2,num3,num4,num5;
+
+    cout<<"escribe un numero entero de 5 digitos : "<<endl;
+     cin>>valor;
+   
+
+    if(valor>=10000)
+    {
+
+        if(valor<=99999)
+        {
+            num1=valor/ 10000;
+            num2=valor % 10000 / 1000;
+            num3=valor % 10000 % 1000 / 100;
+            num4=valor % 10000 % 1000 % 100 / 10;
+            num5=valor % 10000 % 1000 % 100 % 10;
+            
+            
+            cout<<"Este es el resultado"<<endl;
+            cout<<num1;
+            cout<<" ";
+            cout<<num2;
+            cout<<" ";
+            cout<<num3;
+            cout<<" ";
+            cout<<num4;
+            cout<<" ";
+            cout<<num5;
+        
+
+        }
+    }
+
+    return 0;
+
+}
